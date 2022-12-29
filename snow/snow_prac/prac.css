@@ -1,0 +1,10 @@
+body{
+  background: #222;
+}
+
+.snowflake{
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
