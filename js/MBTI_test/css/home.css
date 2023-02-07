@@ -1,0 +1,16 @@
+body{
+  background-color: #F6FCFF;
+  /*   
+  background-image: url('../images/main_bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat; 
+  */
+  background: url('../images/main_bg.jpg') no-repeat top center 
+}
+
+.character{
+  width: 100%;
+  max-width: 364px;
+  /* margin: 0 auto;안먹음 왜냐 img태그가 inline요소이기 때문 그래서 block요소로 바꿔줌 display: block;이거 공통 css파일에 있음*/
+  margin: 0 auto 40px auto;
+}

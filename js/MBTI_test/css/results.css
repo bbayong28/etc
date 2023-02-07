@@ -1,0 +1,66 @@
+body{
+  background-color: #EAF8FF;
+  background: url('../images/result_bg.jpg') no-repeat top center; 
+}
+
+.character{
+  width: 100%;
+  max-width: 600px;
+  margin:  0 auto;
+  margin-bottom: 20px;
+}
+
+.result{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.result .box{
+  /* 최소 높이가 필요한 이유 화면이 줄었을 때  높이 안변하게 하려고*/
+  min-height: 70px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.result h3{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  margin: 40px 0 20px 0;
+}
+
+.result .jobs{
+  height: 200px;
+  display: flex;
+  gap: 10px;
+}
+.result .job{
+  flex: 1;
+  background-color: #ffffff;
+  background-image: url('../images/result_star.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFE603;
+  border-radius: 20px;
+}
+
+.result .lecture img{
+  margin-bottom: 40px;
+  width: 100%;
+}
