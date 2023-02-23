@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=ss, initial-scale=1.0">
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/countries.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea class="from-text" spellcheck="false" placeholder="Enter text"></textarea>
+        <textarea class="to-text" spellcheck="false" readonly disabled placeholder="Translation"></textarea>
+      </div>
+
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i id="from" class="xi-volume-up"></i>
+            <i id="from" class="xi-documents"></i>
+          </div>
+          <select></select>
+        </li>
+        <li class="exchange">
+          <i class="xi-exchange"></i>
+        </li>
+        <li class="row to">
+          <select></select>
+          <div class="icons">
+            <i id="to" class="xi-volume-up"></i>
+            <i id="to" class="xi-documents"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button>Translate Text</button>
+  </div>
+  
+</body>
+</html>
