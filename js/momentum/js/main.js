@@ -1,4 +1,4 @@
-const images = ["0.jpg", "1.jpg", "2.png", "3.png", "4.jpg", "5.jpg","6.png","7.png","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg","31.jpg","32jpg"];
+const images = ["0.jpg", "1.jpg", "2.png", "3.png", "4.jpg", "5.jpg","6.png","7.png","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg","15.jpg","16.jpg","17.jpg","18.jpg","19.jpg","20.jpg","21.jpg","22.jpg","23.jpg","24.jpg","25.jpg","26.jpg","27.jpg","28.jpg","29.jpg","30.jpg","31.jpg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
@@ -12,14 +12,14 @@ document.body.appendChild(bgImages)
 const clock = document.querySelector("#clock")
 
 function getClock() {
-  const date = new Date();
-  const hours = String(date.getHours()).padStart(2,"0");
-  const minutes = String(date.getMinutes()).padStart(2,"0");
-  const seconds = String(date.getSeconds()).padStart(2,"0");
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2,"0");
+    const minutes = String(date.getMinutes()).padStart(2,"0");
+    const seconds = String(date.getSeconds()).padStart(2,"0");
 
 
-  clock.innerText=`${hours}:${minutes}:${seconds}`
-}
+    clock.innerText=`${hours}:${minutes}:${seconds}`
+    }
 
 getClock() 
 setInterval(getClock,1000)
@@ -35,21 +35,18 @@ const HIDDEN_CLASSNAME = "hidden"
 const USERNAME_KEY = "username"
 
 function onLoginSubmit(event) {
-  event.preventDefault();
-  
-  loginForm.classList.add(HIDDEN_CLASSNAME);
-  const username = loginInput.value;
-  localStorage.setItem(USERNAME_KEY, username);
+    event.preventDefault();
+    
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
 
-
-
-  paintGreetings(username);
+    paintGreetings(username);
 }
 
 function paintGreetings(username) { 
-  //greeting.innerText = `Hello ${username}`;
-  greetingText.innerText =`Hello ${username} :)`;
-  greeting.classList.remove(HIDDEN_CLASSNAME);
+    greetingText.innerText =`Hello ${username} :)`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY)
@@ -77,7 +74,7 @@ const toDoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos"
 
 let toDos = [];
- 
+
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos))
     
