@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>모멘텀</title>
+</head>
+
+<body>
+    <div class="Wrap">
+        <h2 id="clock">00:00:00</h2>
+
+        <form id="login-form" class="hidden">
+            <input class="name" require maxlength="15" type="text" placeholder="Write your name." />
+            <input class="loginBtn" type="submit" value="로그인" />
+        </form>
+
+        <h1 id="greeting" class="hidden">
+            <span class="text"></span>
+            <button class="logoutBtn">logout</button>
+        </h1>
+
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required>
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <div id="quote">
+            <p></p>
+            <p></p>
+        </div>
+
+        <div id="weather">
+            <span class="temp"></span>
+            <span class="location"></span>
+        </div>
+    </div>
+
+    <script src="./js/sentence.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

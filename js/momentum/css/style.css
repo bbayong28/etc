@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+.Wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden{
+    display:none;
+}
+
+li{
+    list-style:none;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } 
+    to{
+        opacity: 1;
+    }
+
+}
+
+.bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    transition: fadeIn 0.5s linear;
+    filter: brightness(50%);
+}
+
+.temp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+}
+
+.location {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#login-form .name{
+    width: 180px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    border-bottom: 2px solid #ffffff;
+    text-align: center;
+    margin-right: 10px;
+}
+#login-form .name::placeholder{
+    color: #d2d2d2;
+}
+
+#login-form input:focus {
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+#login-form .loginBtn,
+#greeting .logoutBtn{
+    border: none;
+    outline: none;
+    background: #ffffff;
+    padding: 3px 8px;
+    color: #333333;
+    border-radius: 15px;
+}
+
+
+
+#clock {
+    font-size: 100px;
+    margin: 30px 0;
+}
+
+#greeting{
+    font-size: 50px;
+    margin-bottom: 50px;
+
+}
+#login-form {
+    margin-bottom: 30px;
+}
+
+#todo-form{
+    border: none;
+    border: 0;
+}
+
+
+#todo-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+    border-radius: 10px;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+#todo-list li{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#todo-list li button{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #ff0000;
+}
+
+#todo-form input[type="text"] {
+    border: none;
+    width: 450px;
+    font-size: 30px;
+    border-bottom: 2px solid #ffffff;
+    background: inherit;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+#todo-form input::placeholder{
+    color: #d2d2d2;
+    text-align: center;
+}
+
+#todo-form input:focus {
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
