@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자 열고개!</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <h1>숫자 맞추기 게임</h1>
+
+  <p>
+    컴퓨터는 숫자 1-100까지의 숫자를 하나 선택했습니다. 당신의 추측으로 선택된 숫자를 맞춰주세요! <br/>
+    기회는 10번 입니다. 당신이 선택한 숫자가 높거나 낮을 경우 알려드리겠습니다! 
+  </p>
+
+  <div class="form">
+    <label for="guessValue">추측한 값 : </label>
+    <input type="number"   min="1" max="100" id="guessValue" class="guessValue" required>
+    <input type="submit" value="확인" class="guessSubmit">
+  </div>
+
+  <div class="resultParas">
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowOrHi"></p>
+  </div>
+  
+</body>
+</html>
